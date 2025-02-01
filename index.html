@@ -14,7 +14,10 @@
                     colors: {
                         clifford: '#da373d',
                         "bg-primary": '#EFEBE3',
-                    }
+                    },
+                    screens: {
+                        'xsm': '500px',
+                    },
                 }
             }
         }
@@ -43,14 +46,14 @@
 
 
         @keyframes Anima {
-    from {
-        transform: translate(10%, -10%) skew(0);
-    }
+            from {
+                transform: translate(10%, -10%) skew(0);
+            }
 
-    to {
-        transform: translate(-10%, 10%) skew(-12deg);
-    }
-}
+            to {
+                transform: translate(-10%, 10%) skew(-12deg);
+            }
+        }
 
         .animate-anime1 {
             animation-name: anime1;
@@ -68,12 +71,12 @@
             animation-direction: alternate;
         }
 
-        .Animating{
+        .Animating {
             animation-name: Anima;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
         }
     </style>
 </head>
@@ -162,7 +165,8 @@
 
             <!-- Animation -->
 
-            <div class="Animating w-1/3 h-1/3 rounded-[50%] bg-gradient-to-r from-[#dbac4d9b] to-[#ecca87] top-[15%] left-[15%] blur-2xl absolute z-0">
+            <div
+                class="Animating w-1/3 h-1/3 rounded-[50%] bg-gradient-to-r from-[#dbac4d9b] to-[#ecca87] top-[15%] left-[15%] blur-2xl absolute z-0">
 
 
             </div>
@@ -192,7 +196,7 @@
 
                     <!-- Card - 1 -->
 
-                    <div class="mx-auto card bg-base-100 w-96 md:w-full bg-bg-primary shadow-xl">
+                    <div class="mx-auto card bg-base-100 w-auto md:w-full bg-bg-primary shadow-xl">
 
                         <figure class="w-32 h-3w-32 p-4 my-5 bg-white rounded-full overflow-hidden mx-auto">
                             <img class="w-full  " src="./c2-assets/service.png" alt="user" />
@@ -209,7 +213,7 @@
                     </div>
 
                     <!-- Card - 2 -->
-                    <div class="mx-auto card bg-base-100 w-96 md:w-full bg-bg-primary shadow-xl">
+                    <div class="mx-auto card bg-base-100 w-auto md:w-full bg-bg-primary shadow-xl">
 
                         <figure class="w-32 h-3w-32 p-4 my-5 bg-white rounded-full overflow-hidden mx-auto">
                             <img class="w-full  " src="./c2-assets/delivery.png" alt="user" />
@@ -225,7 +229,7 @@
                     </div>
 
                     <!-- Card - 3 -->
-                    <div class="mx-auto card bg-base-100 w-96 md:w-full bg-bg-primary shadow-xl">
+                    <div class="mx-auto card bg-base-100 w-auto md:w-full bg-bg-primary shadow-xl">
 
                         <figure class="w-32 h-3w-32 p-4 my-5 bg-white rounded-full overflow-hidden mx-auto">
                             <img class="w-full  " src="./c2-assets/healthy.png" alt="user" />
@@ -255,18 +259,21 @@
             <div class=" w-11/12 mx-auto flex flex-col md:flex-row justify-evenly gap-5">
                 <!-- Popular projucts left big one -->
                 <div class="">
-                    <div class="bg-gradient-to-br from-[#53DB3A] rounded-lg to-white md:w-80 w-full md:h-full h-96 relative">
+                    <div
+                        class="bg-gradient-to-br from-[#53DB3A] rounded-lg to-white md:w-80 w-full md:h-full h-96 relative">
                         <div class="space-y-2 md:pt-7 md:pl-5 pt-12 pl-8">
                             <h3 class="text-white font-bold text-2xl">30% off</h3>
-                            <p class="text-gray-700">Discover a world of treats, toys, and essentials handpicked for </p>
+                            <p class="text-gray-700">Discover a world of treats, toys, and essentials handpicked for
+                            </p>
                             <button class="bg-white rounded-md px-4 py-2 font-semibold cursor-pointer">Buy Now</button>
                         </div>
-                        <img class=" w-7/12 max-w-72 absolute bottom-0 right-7"  src="./c2-assets/vegetable-offer.png" alt="">
+                        <img class=" w-7/12 max-w-72 absolute bottom-0 right-7" src="./c2-assets/vegetable-offer.png"
+                            alt="">
                     </div>
                 </div>
 
                 <!-- Popular products right -->
-                <div class="grid grid-cols-2  lg:grid-cols-3 gap-5  ">
+                <div class="grid grid-cols-1 xsm:grid-cols-2  lg:grid-cols-3 gap-5  ">
                     <!-- Products -->
 
                     <div class=" bg-white p-2 w-56 md:w-60 flex items-center gap-4 rounded-md mx-auto">
@@ -403,86 +410,125 @@
             </div>
         </section>
 
-<section id="page-4">
-<div>
+        <!-- Top catagories section -->
+        <section id="page-4">
+            <div>
 
-    <div class="w-11/12 mx-auto my-24">
-        <h1 class="font-bold text-[#179800] text-3xl mb-12">Top Catagories</h1>
-        <!-- Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-4   ">
+                <div class="w-11/12 mx-auto my-24">
+                    <h1 class="font-bold text-[#179800] text-3xl mb-12">Top Catagories</h1>
+                    <!-- Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-4   ">
 
 
-            <!-- Card - 1 -->
+                        <!-- Card - 1 -->
 
-            <div class="mx-auto card bg-base-100 w-full bg-bg-primary shadow-xl space-y-4 py-16">
+                        <div class="mx-auto card bg-base-100 w-full bg-bg-primary shadow-xl space-y-4 py-16">
 
-               <div class="w-24 mx-auto">
-                <img class="w-full" src="./c2-assets/grocery.png" alt="">
-               </div>
+                            <div class="w-24 mx-auto">
+                                <img class="w-full" src="./c2-assets/grocery.png" alt="">
+                            </div>
 
-                <div class=" space-y-2">
-                    <h3 class="font-bold text-center text-2xl">Browse All</h3>
-                    <p class="text-gray-500 text-center font-medium text-lg">(340 item)</p>
+                            <div class=" space-y-2">
+                                <h3 class="font-bold text-center text-2xl">Browse All</h3>
+                                <p class="text-gray-500 text-center font-medium text-lg">(340 item)</p>
+
+                            </div>
+                        </div>
+                        <!-- Card - 2 -->
+
+                        <div class="mx-auto card bg-base-100 w-full bg-bg-primary shadow-xl space-y-4 py-16">
+
+                            <div class="w-24 mx-auto">
+                                <img class="w-full" src="./c2-assets/vegetables.png" alt="">
+                            </div>
+
+                            <div class=" space-y-2">
+                                <h3 class="font-bold text-center text-2xl">Vegetables</h3>
+                                <p class="text-gray-500 text-center font-medium text-lg">(40 item)</p>
+
+                            </div>
+                        </div>
+                        <!-- Card - 3 -->
+
+                        <div class="mx-auto card bg-base-100 w-full bg-bg-primary shadow-xl space-y-4 py-16">
+
+                            <div class="w-24 mx-auto">
+                                <img class="w-full" src="./c2-assets/meat.png" alt="">
+                            </div>
+
+                            <div class=" space-y-2">
+                                <h3 class="font-bold text-center text-2xl">Meat</h3>
+                                <p class="text-gray-500 text-center font-medium text-lg">(23 item)</p>
+
+                            </div>
+                        </div>
+                        <!-- Card - 4 -->
+
+                        <div class="mx-auto card bg-base-100 w-full bg-bg-primary shadow-xl space-y-4 py-16">
+
+                            <div class="w-24 mx-auto">
+                                <img class="w-full" src="./c2-assets/energy-drink.png" alt="">
+                            </div>
+
+                            <div class=" space-y-2">
+                                <h3 class="font-bold text-center text-2xl">Energy Drinks</h3>
+                                <p class="text-gray-500 text-center font-medium text-lg">(120 item)</p>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
 
                 </div>
+
+
             </div>
-            <!-- Card - 2 -->
+        </section>
 
-            <div class="mx-auto card bg-base-100 w-full bg-bg-primary shadow-xl space-y-4 py-16">
+        <!-- Arrival & offer section -->
+        <section id="page-5" class="">
+            <h1 class="font-bold text-[#179800] text-3xl w-11/12 mx-auto">Arrival & Offers</h1>
+            <div class="w-11/12 mx-auto my-24 flex flex-col lg:flex-row justify-between gap-5">
 
-               <div class="w-24 mx-auto">
-                <img class="w-full" src="./c2-assets/vegetables.png" alt="">
-               </div>
 
-                <div class=" space-y-2">
-                    <h3 class="font-bold text-center text-2xl">Vegetables</h3>
-                    <p class="text-gray-500 text-center font-medium text-lg">(40 item)</p>
-
+                <!-- Left card -->
+                <div class="flex justify-between items-center w-full lg:w-3/5 bg-[#115414] rounded-xl  ">
+                    <!-- Info -->
+                    <div class="space-y-5 my-10 ml-4 xsm:mx-7">
+                        <div class="w-48 xsm:ml-4"> <img class="w-full" src="./c2-assets/dawat-logo.png" alt=""></div>
+                        <button class="text-white bg-[#63B76D] rounded-md px-2 xsm:px-6 py-2 text-lg xsm:text-lg tracking-widest">Cook Exotic
+                            Dishes</button>
+                        <p class="text-3xl text-white">UP to <span class="font-bold">20% OFF</span></p>
+                    </div>
+                    <!-- Image -->
+                    <div class="w-1/2 mt-6 -mr-5 xsm:-mr-0">
+                        <img class="w-full" src="./c2-assets/dawat-mock-up.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <!-- Card - 3 -->
 
-            <div class="mx-auto card bg-base-100 w-full bg-bg-primary shadow-xl space-y-4 py-16">
-
-               <div class="w-24 mx-auto">
-                <img class="w-full" src="./c2-assets/meat.png" alt="">
-               </div>
-
-                <div class=" space-y-2">
-                    <h3 class="font-bold text-center text-2xl">Meat</h3>
-                    <p class="text-gray-500 text-center font-medium text-lg">(23 item)</p>
-
+                <!-- Right card -->
+                <div class="flex justify-between items-center w-full lg:w-2/5 bg-[#102861] rounded-xl  ">
+                    <!-- Info -->
+                    <div class="space-y-5 my-10 ml-4 xsm:ml-8 lg:ml-6">
+                        <div class="w-24 ml-10"> <img class="w-full" src="./c2-assets/india-gate-logo.png" alt=""></div>
+                        <button class="text-white bg-[#2A4D97] rounded-md px-3 xsm:px-5 py-2 text-lg tracking-widest">World’s
+                            No.1 Rice</button>
+                        <p class="text-3xl text-white">UP to <span class="font-bold">40% OFF</span></p>
+                    </div>
+                    <!-- Image -->
+                    <div class="w-2/5 max-w-56 mt-6 mr-3">
+                        <img class="w-full" src="./c2-assets/india-gate-mock-up.png" alt="">
+                    </div>
                 </div>
+
+
             </div>
-            <!-- Card - 4 -->
-
-            <div class="mx-auto card bg-base-100 w-full bg-bg-primary shadow-xl space-y-4 py-16">
-
-               <div class="w-24 mx-auto">
-                <img class="w-full" src="./c2-assets/energy-drink.png" alt="">
-               </div>
-
-                <div class=" space-y-2">
-                    <h3 class="font-bold text-center text-2xl">Energy Drinks</h3>
-                    <p class="text-gray-500 text-center font-medium text-lg">(120 item)</p>
-
-                </div>
-            </div>
-
-
-
-
-
-
-        </div>
-
-    </div>
-
-
-</div>
-</section>
-
-
+        </section>
 
     </main>
 
